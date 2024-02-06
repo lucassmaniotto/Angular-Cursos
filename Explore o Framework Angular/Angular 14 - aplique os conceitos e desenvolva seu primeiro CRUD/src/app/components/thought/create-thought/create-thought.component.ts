@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-thought',
@@ -13,7 +14,9 @@ export class CreateThoughtComponent implements OnInit {
     model: 'model1',
   };
 
-  constructor() {}
+  constructor(
+    private router: Router
+  ) {}
 
   ngOnInit(): void {}
 
@@ -22,6 +25,6 @@ export class CreateThoughtComponent implements OnInit {
   }
 
   cancel() {
-    alert('Operação cancelada!');
+    this.router.navigate(['/listThought'])
   }
 }
