@@ -1,17 +1,22 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Thought } from './thought';
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { Thought } from '../../interfaces/thought';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ThoughtService {
   private readonly API_URL = 'http://localhost:3001/thoughts';
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  getThoughts(): Observable<Thought[]> {
-    return this.http.get<Thought[]>(this.API_URL);
+  getThoughts(page: number): Observable<Thought[]> {
+    const itensByPage = 6;
+    let params = new HttpParams()
+      .set('_page', page.toString())
+      .set('_limit', itensByPage.toString());
+
+    return this.http.get<Thought[]>(this.API_URL, { params });
   }
 
   createThought(thought: Thought): Observable<Thought> {

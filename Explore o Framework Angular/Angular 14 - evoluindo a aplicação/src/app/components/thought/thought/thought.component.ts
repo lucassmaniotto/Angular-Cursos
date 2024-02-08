@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Thought } from '../../thought';
+import { Thought } from '../../interfaces/thought';
 
 @Component({
   selector: 'app-thought',

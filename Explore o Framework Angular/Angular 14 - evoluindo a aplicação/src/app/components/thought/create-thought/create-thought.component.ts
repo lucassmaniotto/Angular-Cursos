@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ThoughtService } from '../../thought.service';
+import { ThoughtService } from '../service/thought.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { firstCharUppercaseValidator } from '../validator/firstCharUppercaseValidator';
 

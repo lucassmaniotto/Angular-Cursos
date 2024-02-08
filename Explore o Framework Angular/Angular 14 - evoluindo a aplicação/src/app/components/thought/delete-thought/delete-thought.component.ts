@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Thought } from '../../thought';
-import { ThoughtService } from '../../thought.service';
+import { Thought } from '../../interfaces/thought';
+import { ThoughtService } from '../service/thought.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
