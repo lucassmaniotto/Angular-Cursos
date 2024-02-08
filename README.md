@@ -9,3 +9,8 @@
       3. Diretivas
       4. Comunicação com o Back-end;
       5. Requisições HTTP;
+   2. [Angular 14: evoluindo a aplicação](https://cursos.alura.com.br/course/angular-evoluindo-aplicacao)
+      1. Formulários reativos;
+      2. Validators;
+      3. Paginação e HttpParams;
+      4. Router e Renderização;

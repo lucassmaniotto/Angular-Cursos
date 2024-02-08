@@ -1,0 +1,52 @@
+{
+  "thoughts": [
+    {
+      "id": 1,
+      "content": "See you, space cowboy...",
+      "authorship": "Spike Spiegel",
+      "model": "modelo1"
+    },
+    {
+      "id": 2,
+      "content": "Com grandes poderes vem grandes responsabilidades.",
+      "authorship": "Tio Ben",
+      "model": "modelo2"
+    },
+    {
+      "id": 3,
+      "content": "How you doin'?",
+      "authorship": "Joey Tribbiani",
+      "model": "modelo3"
+    },
+    {
+      "id": 4,
+      "content": "Eu vi coisas que vocês não acreditariam. Naves de ataque em chamas no ombro de Órion. Vi raios-C brilharem na escuridão próximos ao Portal de Tannhäuser. Todos esses momentos se perderão no tempo, como lágrimas na chuva.",
+      "authorship": "Roy Batty",
+      "model": "modelo2"
+    },
+    {
+      "id": 5,
+      "content": "Eu sou Gandalf, e Gandalf significa eu. Eu sou o servo do Fogo Secreto, portador do Fogo Secreto. O fogo escuro não vai me servir, chamas de Isengard! Vá para trás, sombra! Você não pode passar! O fogo de Udûn, o fogo de Udûn! Vá para trás, chamas de Balrog! Você não pode passar! A escuridão não vai nos deter. Vocês não podem passar!",
+      "authorship": "Gandalf",
+      "model": "modelo1"
+    },
+    {
+      "id": 6,
+      "content": "Não beba do cálice da escuridão, pois uma vez provada sua essência, nunca mais será possível saciar a sede.",
+      "authorship": "Drácula",
+      "model": "modelo3"
+    },
+    {
+      "id": 7,
+      "content": "O medo é o caminho para o lado negro. O medo leva à raiva. A raiva leva ao ódio. O ódio leva ao sofrimento.",
+      "authorship": "Yoda",
+      "model": "modelo1"
+    },
+    {
+      "id": 8,
+      "content": "Até mesmo o menor dos seres pode mudar o curso do futuro.",
+      "authorship": "Galadriel",
+      "model": "modelo2"
+    }
+  ]
+}
