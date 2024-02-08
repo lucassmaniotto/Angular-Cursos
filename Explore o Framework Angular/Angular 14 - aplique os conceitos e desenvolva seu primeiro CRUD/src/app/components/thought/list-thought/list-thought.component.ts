@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Thought } from '../../thought';
+import { ThoughtService } from '../../thought.service';
 
 @Component({
   selector: 'app-list-thought',
@@ -6,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-thought.component.css'],
 })
 export class ListThoughtComponent implements OnInit {
-  thoughtsList = [];
+  thoughtsList: Thought[] = [];
 
-  constructor() {}
+  constructor(private service: ThoughtService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.service.getThoughts().subscribe((data) => {
+      this.thoughtsList = data;
+    });
+  }
 }
