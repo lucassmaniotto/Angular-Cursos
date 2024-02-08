@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CreateThoughtComponent } from './components/thought/create-thought/create-thought.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListThoughtComponent } from './components/thought/list-thought/list-thought.component';
 import { ThoughtComponent } from './components/thought/thought/thought.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -28,7 +28,8 @@ import { EditThoughtComponent } from './components/thought/edit-thought/edit-tho
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
