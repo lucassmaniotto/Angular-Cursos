@@ -10,13 +10,14 @@ export class ThoughtService {
   private readonly API_URL = 'http://localhost:3001/thoughts';
   constructor(private http: HttpClient) {}
 
-  getThoughts(page: number, filter: string): Observable<Thought[]> {
+  getThoughts(page: number, filter: string, favorites: boolean): Observable<Thought[]> {
     const itensByPage = 6;
     let params = new HttpParams()
       .set('_page', page.toString())
-      .set('_limit', itensByPage.toString())
+      .set('_limit', itensByPage.toString());
 
-      filter.trim().length > 2 ? params = params.set('q', filter) : params;
+    filter.trim().length > 2 ? (params = params.set('q', filter)) : params;
+    favorites ? (params = params.set('favorite', true)) : params;
 
     return this.http.get<Thought[]>(this.API_URL, { params });
   }
