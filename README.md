@@ -14,3 +14,8 @@
       2. Validators;
       3. Paginação e HttpParams;
       4. Router e Renderização;
+   3. [Angular: formulários orientados a templates](https://cursos.alura.com.br/course/angular-formularios-orientados-templates)
+      1. Tipos de formulários e FormsModule;
+      2. Explorando validadores;
+      3. Diretivas personalizadas;
+      4. Consumo de API;
