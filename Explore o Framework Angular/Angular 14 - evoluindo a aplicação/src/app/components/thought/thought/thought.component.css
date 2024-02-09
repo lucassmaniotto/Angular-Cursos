@@ -1,6 +1,11 @@
 .acoes {
   display: flex;
-  justify-content: flex-end
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.acoes > button {
+  margin-left: 5px;
 }
 
 .botao-excluir {
@@ -61,4 +66,14 @@
   .pensamento-p {
     width: 100%;
   }
+}
+
+.botao-editar,
+.botao-excluir,
+.botao-favorito {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-right: 5px;
+  margin-top: 15px;
 }

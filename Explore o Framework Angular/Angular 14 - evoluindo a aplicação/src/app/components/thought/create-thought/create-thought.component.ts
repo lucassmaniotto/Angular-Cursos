@@ -31,6 +31,7 @@ export class CreateThoughtComponent implements OnInit {
         firstCharUppercaseValidator
       ])],
       model: ['modelo1', Validators.required],
+      favorite: [false]
     });
   }
 

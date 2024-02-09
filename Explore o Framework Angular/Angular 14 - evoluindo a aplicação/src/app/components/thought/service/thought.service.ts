@@ -36,4 +36,9 @@ export class ThoughtService {
   updateThought(thought: Thought): Observable<Thought> {
     return this.http.put<Thought>(`${this.API_URL}/${thought.id}`, thought);
   }
+
+  changeFavoriteValue(thought: Thought): Observable<Thought> {
+    thought.favorite = !thought.favorite;
+    return this.updateThought(thought);
+  }
 }
