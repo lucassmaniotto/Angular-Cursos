@@ -9,7 +9,7 @@ export class ListaDeCompraService {
   private listaDeCompra: Item[] = [];
 
   constructor() {
-    this.listaDeCompra = JSON.parse(localStorage.getItem('itens') || '[]');
+    this.listaDeCompra = JSON.parse(localStorage.getItem('itens') || '[]')
   }
 
   getListaDeCompra(){
@@ -30,6 +30,12 @@ export class ListaDeCompraService {
 
   atualizarLocalStorage() {
     localStorage.setItem('itens', JSON.stringify(this.listaDeCompra));
+  }
+
+  removeLista() {
+    this.listaDeCompra = [];
+    this.atualizarLocalStorage();
+    window.location.reload();
   }
 
   adicionarItemNaLista(nomeDoItem: string) {
