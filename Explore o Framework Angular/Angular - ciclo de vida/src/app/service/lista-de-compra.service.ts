@@ -40,7 +40,7 @@ export class ListaDeCompraService {
     const item: Item = {
       id,
       nome: nomeDoItem,
-      data: new Date().toLocaleString(),
+      data: new Date().toLocaleString("pt-BR"),
       comprado: false
     }
 
@@ -50,5 +50,17 @@ export class ListaDeCompraService {
   adicionarItemNaLista(nomeDoItem: string) {
     const item = this.criarItem(nomeDoItem);
     this.listaDeCompra.push(item);
+  }
+
+  editarItemDaLista(itemAntigo: Item, nomeEditadoDoItem: string) {
+    const itemEditado : Item = {
+      id: itemAntigo.id,
+      nome: nomeEditadoDoItem,
+      data: new Date().toLocaleString("pt-BR"),
+      comprado: itemAntigo.comprado
+    }
+
+    const id = itemAntigo.id;
+    this.listaDeCompra.splice(Number(id) - 1, 1, itemEditado);
   }
 }

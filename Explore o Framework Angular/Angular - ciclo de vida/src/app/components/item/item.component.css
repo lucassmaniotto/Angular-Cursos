@@ -1,6 +1,6 @@
 :host {
   display: grid;
-  grid-template-columns: .5fr 2.5fr .5fr .5fr;
+  grid-template-columns: .5fr 2.5fr .2fr .2fr;
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -15,7 +15,6 @@ small {
 }
 
 .checkbox {
-  /* justify-self: start; */
   grid-area: checkbox;
 }
 
@@ -39,6 +38,16 @@ small {
   justify-self: center;
   align-self: center;
   grid-area: edit-icon;
+}
+
+.edit-icon, .delete-icon {
+  color: #0075ff;
+  cursor: pointer;
+}
+
+.edit-icon:hover, .delete-icon:hover {
+  opacity: .8;
+  transition: .3s;
 }
 
 .date {
