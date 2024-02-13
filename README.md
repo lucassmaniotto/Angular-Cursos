@@ -19,3 +19,9 @@
       2. Explorando validadores;
       3. Diretivas personalizadas;
       4. Consumo de API;
+   4. [Angular: ciclo de vida](https://cursos.alura.com.br/course/angular-ciclo-vida)
+      1. Life Cycle Hooks;
+      2. Renderização;
+      3. Comunicação entre componentes;
+      4. Trabalhando com dados reais;
+      5. Fim do ciclo de vida do componente;
