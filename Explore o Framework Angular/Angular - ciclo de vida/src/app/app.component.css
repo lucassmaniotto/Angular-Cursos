@@ -5,13 +5,15 @@
 }
 
 .container {
-  max-width: 656px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
 }
 
 .lista {
   background: white;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   width: 656px;
 }
 
@@ -37,7 +39,7 @@
 }
 
 small {
-  font-size: .5rem;
+  font-size: .8rem;
 }
 
 .checkbox {
