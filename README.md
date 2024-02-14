@@ -19,16 +19,19 @@
       2. Explorando validadores;
       3. Diretivas personalizadas;
       4. Consumo de API;
-   4. [Angular: ciclo de vida](https://cursos.alura.com.br/course/angular-ciclo-vida)
+2. Gerencie o ciclo de vida de componentes e fluxo de dados reativos com a biblioteca RxJS
+   1. [Angular: ciclo de vida](https://cursos.alura.com.br/course/angular-ciclo-vida)
       1. Life Cycle Hooks;
       2. Renderização;
       3. Comunicação entre componentes;
       4. Trabalhando com dados reais;
       5. Fim do ciclo de vida do componente;
-   5. [RxJS e Angular: programando de forma reativa](https://cursos.alura.com.br/course/rxjs-angular-programando-forma-reativa)
+   2. [RxJS e Angular: programando de forma reativa](https://cursos.alura.com.br/course/rxjs-angular-programando-forma-reativa)
       1. Programação reativa
       2. Ciclo do observable
       3. Operadores RxJS
       4. Pipes do Angular
       5. Otimizando buscas com RxJS
       6. Tratamento de erros
+3. Melhore a experiência do usuário com animações e interações atrativas no Angular
+4. Acessibilidade no Angular: aprimorando formulários, modais e rotas
