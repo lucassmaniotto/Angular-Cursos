@@ -25,3 +25,10 @@
       3. Comunicação entre componentes;
       4. Trabalhando com dados reais;
       5. Fim do ciclo de vida do componente;
+   5. [RxJS e Angular: programando de forma reativa](https://cursos.alura.com.br/course/rxjs-angular-programando-forma-reativa)
+      1. Programação reativa
+      2. Ciclo do observable
+      3. Operadores RxJS
+      4. Pipes do Angular
+      5. Otimizando buscas com RxJS
+      6. Tratamento de erros
