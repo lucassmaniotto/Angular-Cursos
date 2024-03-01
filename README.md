@@ -34,4 +34,17 @@
       5. Otimizando buscas com RxJS
       6. Tratamento de erros
 3. Melhore a experiência do usuário com animações e interações atrativas no Angular
+   1. [Angular: torne sua aplicação interativa e personalizada com animações](https://cursos.alura.com.br/course/angular-aplicacao-interativa-personalizada-animacoes)
+      1. BrowserAnimationsModule
+      2. Triggers e States
+      3. Estados reservados
+      4. Animações de entrada e saída
 4. Acessibilidade no Angular: aprimorando formulários, modais e rotas
+   1. [Angular: aprimore suas técnicas de animação e crie interfaces ainda mais atraentes](https://cursos.alura.com.br/course/angular-tecnicas-animacao-interfaces-atraentes)
+      1. Estilos intermediários com keyframes
+      2. Personalizando animações com cubic-bezier
+      3. Animações simultâneas
+      4. Animações de elementos alinhados
+      5. Atualização de dados com BehaviorSubject
+      6. Animações sequenciais com stagger
+      7. Desabilitando animações
