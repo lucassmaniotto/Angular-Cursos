@@ -8,6 +8,8 @@ import { Tarefa } from '../interface/tarefa';
 import {
   checkButtonStateTrigger,
   filterTrigger,
+  flyInOutTrigger,
+  formButtonTrigger,
   highlightedStateTrigger,
   shownStateTrigger,
 } from '../animations';
@@ -21,6 +23,8 @@ import {
     shownStateTrigger,
     checkButtonStateTrigger,
     filterTrigger,
+    formButtonTrigger,
+    flyInOutTrigger
   ],
 })
 export class ListaTarefasComponent implements OnInit {
