@@ -136,3 +136,26 @@ export const flyInOutTrigger = trigger('flyInOut', [
     ]),
   ]),
 ]);
+
+export const shakeTrigger = trigger('shakeAnimation', [
+  transition('* => *', [
+    query('input.ng-invalid:focus, select.ng-invalid:focus', [
+      animate(
+        '0.5s',
+        keyframes([
+          style({ border: '2px solid red', offset: 0.1 }),
+          style({ transform: 'translateX(-5px)', offset: 0.1 }),
+          style({ transform: 'translateX(5px)', offset: 0.2 }),
+          style({ transform: 'translateX(-5px)', offset: 0.3 }),
+          style({ transform: 'translateX(5px)', offset: 0.4 }),
+          style({ transform: 'translateX(-5px)', offset: 0.5 }),
+          style({ transform: 'translateX(5px)', offset: 0.6 }),
+          style({ transform: 'translateX(-5px)', offset: 0.7 }),
+          style({ transform: 'translateX(5px)', offset: 0.8 }),
+          style({ transform: 'translateX(-5px)', offset: 0.9 }),
+          style({ transform: 'translateX(0)', offset: 1 }),
+        ])
+      ),
+    ], { optional: true }),
+  ]),
+]);

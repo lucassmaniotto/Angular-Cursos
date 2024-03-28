@@ -11,6 +11,7 @@ import {
   flyInOutTrigger,
   formButtonTrigger,
   highlightedStateTrigger,
+  shakeTrigger,
   shownStateTrigger,
 } from '../animations';
 
@@ -24,7 +25,8 @@ import {
     checkButtonStateTrigger,
     filterTrigger,
     formButtonTrigger,
-    flyInOutTrigger
+    flyInOutTrigger,
+    shakeTrigger
   ],
 })
 export class ListaTarefasComponent implements OnInit {
