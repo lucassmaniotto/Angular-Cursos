@@ -24,3 +24,15 @@ header a {
   height: 60px;
 }
 
+header .active-page {
+  border-bottom: 2px solid #FFF;
+}
+
+header .active-page.logo {
+  border-bottom: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
