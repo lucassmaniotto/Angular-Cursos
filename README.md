@@ -48,3 +48,14 @@
       5. Atualização de dados com BehaviorSubject
       6. Animações sequenciais com stagger
       7. Desabilitando animações
+
+### Construindo aplicações acessíveis e avançando em testes automatizados - Formação disponível em: [Alura](https://cursos.alura.com.br/formacao-angular-aplicacoes-acessiveis-testes-automatizados)
+1. Testes
+   1. [Angular: testes automatizados com Jasmine e Karma](https://cursos.alura.com.br/course/angular-explorando-framework)
+         1. Jasmine e Karma
+         2. Fundamentos e vícios de testes
+         3. Testes escaláveis
+         4. TestBed
+         5. Lançadores costumizados e scripts para sevidores CI
+         6. Métricas de cobertura e confiançabilidade de testes
+2. Acessibilidade
