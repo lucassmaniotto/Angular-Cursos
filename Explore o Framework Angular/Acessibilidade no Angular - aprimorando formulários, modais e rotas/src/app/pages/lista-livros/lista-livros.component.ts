@@ -1,14 +1,24 @@
 import { HttpClientModule } from '@angular/common/http';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EMPTY, catchError, debounceTime, distinctUntilChanged, filter, map, switchMap, tap, throwError } from 'rxjs';
+import {
+  EMPTY,
+  catchError,
+  debounceTime,
+  distinctUntilChanged,
+  filter,
+  map,
+  switchMap,
+  tap,
+  throwError,
+} from 'rxjs';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 import { LivrosResultado, Item } from '../../models/interfaces';
 import { LivroVolumeInfo } from '../../models/livroVolumeInfo';
 import { LivroService } from '../../service/livro.service';
 import { LivroComponent } from '../../componentes/livro/livro.component';
-
+import { LiveAnnouncer } from '@angular/cdk/a11y';
 
 const PAUSA = 300;
 
@@ -19,18 +29,21 @@ const PAUSA = 300;
     HttpClientModule,
     CommonModule,
     LivroComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   templateUrl: './lista-livros.component.html',
-  styleUrl: './lista-livros.component.css'
+  styleUrl: './lista-livros.component.css',
 })
-export class ListaLivrosComponent implements AfterViewInit{
+export class ListaLivrosComponent implements AfterViewInit {
   campoBusca = new FormControl();
-  mensagemErro = ''
+  mensagemErro = '';
   livrosResultado!: LivrosResultado;
   @ViewChild('campoBuscaElement') campoBuscaElement!: ElementRef;
 
-  constructor(private service: LivroService) { }
+  constructor(
+    private service: LivroService,
+    private liveAnnouncer: LiveAnnouncer
+  ) {}
 
   ngAfterViewInit() {
     this.campoBuscaElement.nativeElement.focus();
@@ -49,6 +62,9 @@ export class ListaLivrosComponent implements AfterViewInit{
     }),
     tap((resultado) => {
       this.livrosResultado = resultado;
+      this.liveAnnouncer.announce(
+        `${this.livrosResultado.totalItems} resultados encontrados`
+      );
     }),
     map((resultado) => resultado.items ?? []),
     map((items) => this.livrosResultadoParaLivros(items)),
@@ -59,8 +75,8 @@ export class ListaLivrosComponent implements AfterViewInit{
   );
 
   livrosResultadoParaLivros(items: Item[]): LivroVolumeInfo[] {
-    return items.map(item => {
-      return new LivroVolumeInfo(item)
-    })
+    return items.map((item) => {
+      return new LivroVolumeInfo(item);
+    });
   }
 }
